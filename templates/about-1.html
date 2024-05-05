@@ -1,0 +1,326 @@
+{% extends 'layouts/master.html' %}
+{% load static %}
+
+{% block title %}
+	Home
+{% endblock %}
+  {% block class %}
+	active
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+<div class="row py-5">
+<div class="col-12 pt-lg-5 mt-lg-5 text-center">
+<h1 class="display-4 text-white animated zoomIn mb-3">About Us</h1>
+<a "{% url 'about' %}" class="h5 text-white">Home</a>
+<i class="fa fa-angle-double-right text-white px-2"></i>
+<a "{% url 'about' %}" class="h5 text-white">About</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="searchModal" tabindex="-1">
+<div class="modal-dialog modal-fullscreen">
+<div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+<div class="modal-header border-0">
+<button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body d-flex align-items-center justify-content-center">
+<div class="input-group" style="max-width: 600px;">
+<input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+<button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!----------------------------------------------------------------------------------------->
+<div class="container-fluid pt-5 wow fadeInUp" data-wow-delay="0.1s">
+<div class="container py-5">
+<div class="row g-5">
+<div class="col-lg-7">
+<div class="section-title-1 position-relative pb-3 mb-5">
+<h5 class="fw-bold text-primary text-uppercase">About Us</h5>
+<h1 class="mb-0">Analytic Avengers: Unleashing together Your Business Potential with Customer Lifetime Value Predictions</h1>
+</div>
+<p class="mb-4">Welcome to Analytic Avengers, where data-driven insights empower businesses to maximize customer lifetime value and drive sustainable growth.
+    Analytic Avengers decode customer data, predicting Customer Lifetime Value(CLV) to illuminate pathways to success.
+    With precision and finesse, we empower informed decisions, navigating business complexities with clarity and confidence.
+    Join us to unlock your business potential.
+    At Analytic Avengers, we believe in the power of data to transform businesses and unlock their full potential.
+    With our advanced predictive analytics solutions, we help companies harness the value of their customer data to make informed decisions and achieve their strategic objectives.
+
+   <strong><h6> Our Mission</h6></strong>
+
+    Our mission at Analytic Avengers is to revolutionize the way businesses understand and engage with their customers.
+     By delivering cutting-edge CLV prediction services, we enable companies to optimize marketing strategies, enhance customer experiences, and ultimately, boost profitability.
+
+   </p>
+<div class="row g-0 mb-3">
+<div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+<h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Award Winning</h5>
+<h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Professional Team</h5>
+</div>
+<div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+<h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>24/7 Support</h5>
+<h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Detailed predictions</h5>
+</div>
+</div>
+<div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
+<div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+<i class="fa fa-phone-alt text-white"></i>
+</div>
+<div class="ps-4">
+<h5 class="mb-2">Call to ask any question</h5>
+<h4 class="text-primary mb-0">+254 8392358945</h4>
+</div>
+</div>
+<a href="{% url 'index' %}" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Predict Your CLV</a>
+
+</div>
+
+<div class="col-lg-5" style="min-height: 500px;">
+<div class="position-relative h-100">
+<img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="{% static 'app/assets/img/about2.jpg' %}" style="object-fit: cover;">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="section-title-2 text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">Our Story</h5>
+            <h1 class="mb-0">Years of Our Journey to Help Your Business</h1>
+        </div>
+        <div class="container story position-relative">
+            <div class="row mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-12 text-md-center">
+                    <div class="d-inline-block bg-primary text-white rounded py-2 px-4">Now</div>
+                </div>
+            </div>
+            <div class="row gx-5 story-right position-relative mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-md-6 text-md-end">
+                    <h6 class="fw-bold mb-3 ms-3 ms-md-0">01 Jun, 2024</h6>
+                </div>
+                <div class="col-md-6">
+                    <div class="story-text position-relative d-inline-block bg-light p-4 ms-3 ms-md-0">
+                        <h4>Company Growth</h4>
+                        <p class="m-0">Expanded client base and introduced new services to meet market demands.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-5 story-left position-relative mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-md-6 d-block d-md-none">
+                    <h6 class="fw-bold mb-3 ms-3 ms-md-0">01 Jan, 2024</h6>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="story-text position-relative d-inline-block bg-light p-4 ms-3 ms-md-0">
+                        <h4>New Initiatives</h4>
+                        <p class="m-0">Launched innovative projects to solve complex business challenges.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-none d-md-block">
+                    <h6 class="fw-bold mb-3 ms-3 ms-md-0">01 Jan, 2024</h6>
+                </div>
+            </div>
+            <div class="row mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-12 text-md-center">
+                    <div class="d-inline-block bg-primary text-white rounded py-2 px-4">2023</div>
+                </div>
+            </div>
+            <div class="row gx-5 story-right position-relative mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-md-6 text-md-end">
+                    <h6 class="fw-bold mb-3 ms-3 ms-md-0">01 Jun, 2023</h6>
+                </div>
+                <div class="col-md-6">
+                    <div class="story-text position-relative d-inline-block bg-light p-4 ms-3 ms-md-0">
+                        <h4>Company Milestone</h4>
+                        <p class="m-0">Achieved significant growth and recognition in the industry.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-5 story-left position-relative mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-md-6 d-block d-md-none">
+                    <h6 class="fw-bold mb-3 ms-3 ms-md-0">01 Jan, 2023</h6>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="story-text position-relative d-inline-block bg-light p-4 ms-3 ms-md-0">
+                        <h4>Market Expansion</h4>
+                        <p class="m-0">Expanded into new markets and established strategic partnerships.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-none d-md-block">
+                    <h6 class="fw-bold mb-3 ms-3 ms-md-0">01 Jan, 2023</h6>
+                </div>
+            </div>
+            <div class="row mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-12 text-md-center">
+                    <div class="d-inline-block bg-primary text-white rounded py-2 px-4">2022</div>
+                </div>
+            </div>
+            <div class="row gx-5 story-right position-relative mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-md-6 text-md-end">
+                    <h6 class="fw-bold mb-3 ms-3 ms-md-0">01 Jun, 2022</h6>
+                </div>
+                <div class="col-md-6">
+                    <div class="story-text position-relative d-inline-block bg-light p-4 ms-3 ms-md-0">
+                        <h4>Company Launch</h4>
+                        <p class="m-0">Launched the company with a vision to revolutionize data science.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-5 story-left position-relative mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-md-6 d-block d-md-none">
+                    <h6 class="fw-bold mb-3 ms-3 ms-md-0">01 Jan, 2022</h6>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="story-text position-relative d-inline-block bg-light p-4 ms-3 ms-md-0">
+                        <h4>Company Inception</h4>
+                        <p class="m-0">Started as a small team with a big dream in the field of data science.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-none d-md-block">
+                    <h6 class="fw-bold mb-3 ms-3 ms-md-0">01 Jan, 2022</h6>
+                </div>
+            </div>
+            <div class="row wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-12 text-md-center">
+                    <div class="d-inline-block bg-primary text-white rounded py-2 px-4">Launched</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="section-title-1 text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">Team Members</h5>
+            <h1 class="mb-0">Team Members Behind The Success of Analytic Avengers</h1>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                <div class="team-item bg-light rounded overflow-hidden">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="{% static 'app/assets/img/brian.jpg' %}" alt>
+                        <div class="team-social">
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-twitter fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-facebook-f fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-instagram fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center py-4">
+                        <h4 class="text-primary">Brian</h4>
+                        <p class="text-uppercase m-0">Data Scientist</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat the above div block for each additional team member -->
+            <!-- Example for Team Member 2 -->
+            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                <div class="team-item bg-light rounded overflow-hidden">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="{% static 'app/assets/img/kendi.jpg' %}" alt>
+                        <div class="team-social">
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-twitter fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-facebook-f fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-instagram fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center py-4">
+                        <h4 class="text-primary">Kendi</h4>
+                        <p class="text-uppercase m-0">Data Scientist</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat the above div block for each additional team member -->
+            <!-- Example for Team Member 3 -->
+            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                <div class="team-item bg-light rounded overflow-hidden">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="{% static 'app/assets/img/nzuve.jpg' %}" alt>
+                        <div class="team-social">
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-twitter fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-facebook-f fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-instagram fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center py-4">
+                        <h4 class="text-primary">Nzuve</h4>
+                        <p class="text-uppercase m-0">Data Scientist</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat the above div block for each additional team member -->
+            <!-- Example for Team Member 4 -->
+            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                <div class="team-item bg-light rounded overflow-hidden">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="{% static 'app/assets/img/brenda' %}" alt>
+                        <div class="team-social">
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-twitter fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-facebook-f fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-instagram fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center py-4">
+                        <h4 class="text-primary">Brenda</h4>
+                        <p class="text-uppercase m-0">Data Scientist</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Example for Team Member 5 -->
+            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                <div class="team-item bg-light rounded overflow-hidden">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="{% static 'app/assets/img/beatrice.jpg' %}" alt>
+                        <div class="team-social">
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-twitter fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-facebook-f fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-instagram fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center py-4">
+                        <h4 class="text-primary">Beatrice</h4>
+                        <p class="text-uppercase m-0">Data Scientist</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Example for Team Member 6 -->
+            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                <div class="team-item bg-light rounded overflow-hidden">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="{% static 'app/assets/img/vincent.jpg' %}" alt>
+                        <div class="team-social">
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-twitter fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-facebook-f fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-instagram fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://demo.htmlcodex.com/pro/startup/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center py-4">
+                        <h4 class="text-primary">Vincent</h4>
+                        <p class="text-uppercase m-0">Data Scientist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

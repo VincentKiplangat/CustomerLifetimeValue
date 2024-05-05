@@ -1,0 +1,206 @@
+{% extends 'layouts/master.html' %}
+{% load static %}
+
+{% block title %}
+	Frequently Asked Questions
+
+{% endblock %}
+  {% block class %}
+	active
+{% endblock %}
+
+{% block content %}
+
+
+<div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+<div class="row py-5">
+<div class="col-12 pt-lg-5 mt-lg-5 text-center">
+<h1 class="display-4 text-white animated zoomIn mb-3">FAQs</h1>
+<a "https://demo.htmlcodex.com/pro/startup/href" class="h5 text-white">Home</a>
+<i class="fa fa-angle-double-right text-white px-2"></i>
+<a "https://demo.htmlcodex.com/pro/startup/href" class="h5 text-white">FAQs</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="searchModal" tabindex="-1">
+<div class="modal-dialog modal-fullscreen">
+<div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+<div class="modal-header border-0">
+<button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body d-flex align-items-center justify-content-center">
+<div class="input-group" style="max-width: 600px;">
+<input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+<button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+<div class="container py-5">
+<div class="section-title-1 text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+<h5 class="fw-bold text-primary text-uppercase">General FAQs</h5>
+<h1 class="mb-0">Stumped? Peek at the FAQs or ping us for a chat – we're CLV gurus with a side of sass!</h1>
+</div>
+<div class="row g-5">
+<div class="col-lg-8">
+<div class="accordion accordion-custom" id="accordionExample">
+<div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+<h2 class="accordion-header" id="headingOne">
+<button class="accordion-button fw-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+What is a CLV model?
+</button>
+</h2>
+<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+<div class="accordion-body">
+A Customer Lifetime Value (CLV) model is a quantitative framework used to estimate the total revenue a customer is expected to generate for your business throughout their entire relationship with you.
+ It considers factors like purchase history, frequency, value, and potential future interactions. By understanding the lifetime value of your customers,
+  you can make informed decisions about resource allocation and prioritize efforts towards high-value segments.
+</div>
+</div>
+</div>
+<div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+<h2 class="accordion-header" id="headingTwo">
+<button class="accordion-button collapsed fw-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+Why are CLV models important?
+</button>
+</h2>
+<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+<div class="accordion-body">
+   CLV models are crucial for businesses because they help move beyond simple customer acquisition metrics.<br>
+    Imagine focusing solely on acquiring new customers, but neglecting those who have already proven their loyalty and spending power.
+    CLV models provide a more comprehensive picture, allowing you to:<br>
+
+    <b>Prioritize customer segments:</b> Identify your most valuable customers and tailor marketing strategies to maximize their lifetime value.<br>
+    <b>Optimize marketing spend:</b> Allocate resources efficiently by targeting segments with higher projected CLV, leading to a better return on investment (ROI).<br>
+    <b>Improve customer retention: </b> By understanding which customers are at risk of churn (stopping business with you), you can proactively implement retention strategies to keep high-value customers engaged.<br>
+    <b>Forecast future revenue:</b>  CLV models can help predict future revenue streams based on historical customer behavior, allowing for better financial planning and resource allocation.<br>
+</div>
+</div>
+</div>
+<div class="accordion-item wow fadeInUp" data-wow-delay="0.3s">
+<h2 class="accordion-header" id="headingThree">
+<button class="accordion-button collapsed fw-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+ What data do I need to build a CLV model?
+</button>
+</h2>
+<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+<div class="accordion-body">
+    The data required for a CLV model can vary depending on its complexity. However, some core elements are essential:<br>
+
+    <b>Customer purchase history:</b> This includes information like total purchase value, frequency of purchases, and product categories purchased.<br>
+    <b> Customer acquisition cost (CAC): </b>Knowing how much it costs to acquire a new customer is crucial for understanding profitability.<br>
+    <b> Customer lifetime (optional): </b> If you have historical data on customer retention rates, it can further refine your CLV calculations.<br>
+</div>
+</div>
+</div>
+<div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
+<h2 class="accordion-header" id="headingFour">
+<button class="accordion-button collapsed fw-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+How can I use CLV to improve customer acquisition?
+</button>
+</h2>
+<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+<div class="accordion-body">
+    By understanding customer lifetime value, you can move beyond a "one-size-fits-all" approach to acquisition.  Here's how:<br>
+
+    <b>Target high-value segments:</b>Identify customer segments with a higher projected CLV and focus your acquisition efforts there.<br>
+    <b>Optimize marketing campaigns:</b>  Tailor your messaging and channels to resonate with high-value customer segments, leading to better conversion rates.<br>
+   <b> Refine customer acquisition cost (CAC):</b>  By focusing on acquiring high-value customers, you can potentially justify a higher CAC, as the long-term returns will be greater.<br>
+</div>
+</div>
+</div>
+<div class="accordion-item wow fadeInUp" data-wow-delay="0.5s">
+<h2 class="accordion-header" id="headingFive">
+<button class="accordion-button collapsed fw-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+How can I use CLV to improve customer retention?
+</button>
+</h2>
+<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+<div class="accordion-body">
+    Customer retention is crucial for maximizing the overall value of your customer base. CLV models help here by:<br>
+
+   <b> Identifying churn risk:</b> By analyzing purchase behavior and other data points, CLV models can help predict which customers are at risk of leaving.<br>
+   <b> Prioritizing retention efforts:</b>  Focus your retention programs on high-value customers who are more likely to churn, maximizing the impact of your efforts.<br>
+   <b> Personalize the customer experience:</b> Use CLV insights to tailor loyalty programs, communication, and special offers to high-value customers, fostering loyalty and reducing churn.<br>
+</div>
+</div>
+</div>
+<div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
+<h2 class="accordion-header" id="headingSix">
+<button class="accordion-button collapsed fw-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+ How do I account for customer churn in my CLV model?
+</button>
+</h2>
+<div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+<div class="accordion-body">
+    Customer churn, the rate at which customers stop doing business with you, is a key factor in CLV calculations.  Here's how to incorporate it:<br>
+
+    <b>Include historical churn data:</b> Analyze historical data to understand churn rates for different customer segments.<br>
+    <b>Segment customers by churn risk:</b> Identify groups with higher churn probability based on purchase behavior and other factors.<br>
+    <b>Apply churn rates to future projections: </b>Factor in churn rates when estimating future revenue from each customer segment within your CLV model.<br>
+</div>
+</div>
+</div>
+<div class="accordion-item wow fadeInUp" data-wow-delay="0.7s">
+<h2 class="accordion-header" id="headingSeven">
+<button class="accordion-button collapsed fw-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+ What are the limitations of CLV models?
+</button>
+</h2>
+<div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+<div class="accordion-body">
+    It's important to understand that CLV models are based on historical data and assumptions about future customer behavior.  Here are some limitations to consider:<br>
+
+    <b>Limited future prediction:</b> Unexpected market shifts or changes in customer preferences can impact the accuracy of CLV predictions.<br>
+    <b> Data quality dependence: </b>The accuracy of your CLV model heavily relies on the quality and completeness of your customer data.<br>
+    <b>Model complexity challenges:</b> While advanced models offer more nuanced insights, they can be more complex to build and maintain.<br>
+</div>
+</div>
+</div>
+<div class="accordion-item wow fadeInUp" data-wow-delay="0.8s">
+<h2 class="accordion-header" id="headingEight">
+<button class="accordion-button collapsed fw-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+Can CLV models incorporate customer sentiment data?
+</button>
+</h2>
+<div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+<div class="accordion-body">
+    Yes, some advanced CLV models can integrate customer sentiment data. This data can come from sources like customer satisfaction surveys, social media interactions, and customer support interactions.
+     By analyzing sentiment data, you can:<br>
+
+    <b>Predict future churn risk:</b> Dissatisfied customers are more likely to churn. Sentiment data can help identify at-risk customers for proactive intervention.<br>
+    <b>Refine customer segmentation:</b> Segment customers based on sentiment alongside traditional metrics like purchase history, leading to more targeted marketing and retention strategies.<br>
+    <b>Personalize the customer experience: </b>Use sentiment data to tailor communication and offerings to individual customer needs and preferences, fostering stronger relationships.<br>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-4">
+
+<div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+<div class="section-title-1 section-title-sm position-relative pb-3 mb-4">
+<h3 class="mb-0">Popular FAQ</h3>
+</div>
+<div class="d-flex flex-column justify-content-start">
+<a class="h6 fw-bold bg-light rounded py-3 px-4 d-flex align-items-center justify-content-between mb-2" href="faq.html#"><span>Do I need any prior knowledge of CLV to use this website?</span> <i class="bi bi-arrow-right ms-3"></i></a>
+<a class="h6 fw-bold bg-light rounded py-3 px-4 d-flex align-items-center justify-content-between mb-2" href="faq.html#"><span>What kind of data can I use with your CLV tools?</span> <i class="bi bi-arrow-right ms-3"></i></a>
+<a class="h6 fw-bold bg-light rounded py-3 px-4 d-flex align-items-center justify-content-between mb-2" href="faq.html#"><span>Does your website offer pre-built CLV models?</span> <i class="bi bi-arrow-right ms-3"></i></a>
+<a class="h6 fw-bold bg-light rounded py-3 px-4 d-flex align-items-center justify-content-between mb-2" href="faq.html#"><span>How can using your CLV website improve my customer acquisition strategies?</span> <i class="bi bi-arrow-right ms-3"></i></a>
+<a class="h6 fw-bold bg-light rounded py-3 px-4 d-flex align-items-center justify-content-between mb-2" href="faq.html#"><span>What kind of insights can I expect from your CLV models?</span> <i class="bi bi-arrow-right ms-3"></i></a>
+<a class="h6 fw-bold bg-light rounded py-3 px-4 d-flex align-items-center justify-content-between mb-2" href="faq.html#"><span>Can I export the data and insights from your website?</span> <i class="bi bi-arrow-right ms-3"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+{% endblock %}

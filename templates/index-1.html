@@ -1,0 +1,258 @@
+{% extends 'layouts/master.html' %}
+{% load static %}
+
+{% block title %}
+	Home
+{% endblock %}
+  {% block class %}
+	active
+{% endblock %}
+
+{% block content %}
+
+
+
+<div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img class="w-100" src="{% static 'app/assets/img/carousel-1.jpg' %}" alt="Image">
+<div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+<div class="p-3" style="max-width: 900px;">
+<h5 class="text-white text-uppercase mb-3 animated slideInDown">Creative & Innovative</h5>
+<h1 class="display-1 text-white mb-md-4 animated zoomIn">Unlocking the Power of Customer Lifetime Value</h1>
+<a href="{% url 'contact' %}" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a>
+</div>
+</div>
+</div>
+<div class="carousel-item">
+<img class="w-100" src="{% static 'app/assets/img/carousel2.jpg' %}" alt="Image">
+<div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+<div class="p-3" style="max-width: 900px;">
+<h5 class="text-white text-uppercase mb-3 animated slideInDown">Creative & Innovative</h5>
+<h1 class="display-1 text-white mb-md-4 animated zoomIn">Unlocking the Power of Customer Lifetime Value</h1>
+<a href="{% url 'contact' %}" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a>
+
+</div>
+</div>
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+</div>
+
+
+<div class="modal fade" id="searchModal" tabindex="-1">
+<div class="modal-dialog modal-fullscreen">
+<div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+<div class="modal-header border-0">
+<button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body d-flex align-items-center justify-content-center">
+<div class="input-group" style="max-width: 600px;">
+<input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+<button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+<div class="container py-5">
+<div class="row g-5">
+<div class="col-lg-7">
+<div class="section-title-1 position-relative pb-3 mb-5">
+<h5 class="fw-bold text-primary text-uppercase">About Us</h5>
+<h1 class="mb-0">One of the Best Business Solutions With Years of Experience</h1>
+</div>
+<p class="mb-4">Analytic Avengers is a dynamic company consisting of six experienced data scientists dedicated to revolutionizing business strategies. Specializing in market segmentation and precise ad targeting, Analytic Avengers employs advanced data analytics techniques to unlock invaluable insights for businesses. Leveraging their expertise in Customer Lifetime Value (CLV) predictions, the team empowers clients to optimize marketing efforts, tailor product offerings, and enhance customer experiences. By deciphering CLV, Analytic Avengers enables businesses to identify high-value customers, predict future revenue streams, and implement targeted retention strategies. With a keen focus on driving growth and maximizing ROI, Analytic Avengers is poised to propel businesses towards sustainable success in the competitive landscape of today's market.<div class="row g-0 mb-3">
+<div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+<h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Transparency</h5>
+<h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Professional Team</h5>
+</div>
+<div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+<h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>24/7 Support</h5>
+<h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Reliability</h5>
+</div>
+</div>
+<div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
+<div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+<i class="fa fa-phone-alt text-white"></i>
+</div>
+<div class="ps-4">
+<h5 class="mb-2">Call to ask any question</h5>
+<h4 class="text-primary mb-0">+254 8392358945</h4>
+</div>
+</div>
+</div>
+<div class="col-lg-5" style="min-height: 500px;">
+<div class="position-relative h-100">
+<img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="{% static 'app/assets/img/about1.jpg' %}" style="object-fit: cover;">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+<div class="container py-5">
+<div class="section-title-1 text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+<h5 class="fw-bold text-primary text-uppercase">Why Choose Us</h5>
+<h1 class="mb-0">We Are Here to Grow Your Business Exponentially</h1>
+</div>
+<div class="row g-5">
+<div class="col-lg-4">
+<div class="row g-5">
+<div class="col-md-6 col-lg-12 wow zoomIn" data-wow-delay="0.2s">
+<div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+<i class="fa fa-cubes text-white"></i>
+</div>
+<h4>Best In The Industry</h4>
+</div>
+<div class="col-md-6 col-lg-12 wow zoomIn" data-wow-delay="0.6s">
+<div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+<i class="fa fa-award text-white"></i>
+</div>
+<h4>Innovation</h4>
+</div>
+</div>
+</div>
+<div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
+<div class="position-relative h-100">
+<img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" src="{% static 'app/assets/img/feature.jpg' %}" style="object-fit: cover;">
+</div>
+</div>
+<div class="col-lg-4">
+<div class="row g-5">
+<div class="col-md-6 col-lg-12 wow zoomIn" data-wow-delay="0.4s">
+<div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+<i class="fa fa-users-cog text-white"></i>
+</div>
+<h4>Professional and Reliable Team</h4>
+</div>
+<div class="col-md-6 col-lg-12 wow zoomIn" data-wow-delay="0.8s">
+<div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+<i class="fa fa-phone-alt text-white"></i>
+</div>
+<h4>24/7 Support</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+<div class="container py-5">
+<div class="section-title-1 text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+<h5 class="fw-bold text-primary text-uppercase">Work Process</h5>
+<h1 class="mb-0">Step By Step Simple & Clean Working Process</h1>
+</div>
+<div class="row g-5">
+<div class="col-lg-3 col-md-6 process-item wow slideInUp" data-wow-delay="0.2s">
+<div class="position-relative d-flex flex-column align-items-center text-center">
+<div class="process-icon bg-primary rounded d-flex align-items-center justify-content-center mb-4">
+<i class="fa fa-search fa-2x text-white"></i>
+</div>
+<h3>Research</h3>
+<p class="mb-0">Research is conducted on various aspects of the business.</p>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 process-item wow slideInUp" data-wow-delay="0.4s">
+<div class="position-relative d-flex flex-column align-items-center text-center">
+<div class="process-icon bg-primary rounded d-flex align-items-center justify-content-center mb-4">
+<i class="fa fa-sitemap fa-2x text-white"></i>
+</div>
+<h3>Development</h3>
+<p class="mb-0">Model is tailored based on the specifics of the business.</p>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 process-item wow slideInUp" data-wow-delay="0.6s">
+<div class="position-relative d-flex flex-column align-items-center text-center">
+<div class="process-icon bg-primary rounded d-flex align-items-center justify-content-center mb-4">
+<i class="fa fa-code fa-2x text-white"></i>
+</div>
+<h3>Implementation</h3>
+<p class="mb-0">CLV is calculated and outputs acquired.</p>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 process-item wow slideInUp" data-wow-delay="0.8s">
+<div class="position-relative d-flex flex-column align-items-center text-center">
+<div class="process-icon bg-primary rounded d-flex align-items-center justify-content-center mb-4">
+<i class="fa fa-check fa-2x text-white"></i>
+</div>
+<h3>Finalization</h3>
+<p class="mb-0">Outputs are translated into recommendations for specific businesses.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+<div class="container py-5">
+<div class="section-title-1 text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+<h5 class="fw-bold text-primary text-uppercase">Testimonials</h5>
+<h1 class="mb-0">What Our Clients Say About Our Services</h1>
+</div>
+<div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
+<div class="testimonial-item bg-light my-4">
+<div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+<img class="img-fluid rounded" src="{% static 'app/assets/img/sarah.jpg' %}" style="width: 60px; height: 60px;">
+<div class="ps-4">
+<h4 class="text-primary mb-1">Sarah</h4>
+<small class="text-uppercase">Founder & CEO</small>
+</div>
+</div>
+<div class="pt-4 pb-5 px-5">
+    Using Analytic Avengers' CLV prediction website has been a game-changer for our business. With their intuitive platform, we were able to gain deep insights into our customer lifetime value, allowing us to tailor our marketing strategies and drive significant growth. Their accurate predictions and actionable recommendations have truly transformed the way we approach customer acquisition and retention.</div>
+</div>
+<div class="testimonial-item bg-light my-4">
+<div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+<img class="img-fluid rounded" src="{% static 'app/assets/img/david.jpg' %}" style="width: 60px; height: 60px;">
+<div class="ps-4">
+<h4 class="text-primary mb-1">David</h4>
+<small class="text-uppercase">Marketing Director</small>
+</div>
+</div>
+<div class="pt-4 pb-5 px-5">
+    I cannot recommend Analytic Avengers' CLV prediction website enough. As a small business owner, understanding our customers' lifetime value has always been a challenge. However, with their user-friendly interface and robust analytics, we were able to uncover valuable insights that have directly impacted our bottom line. Their platform has become an indispensable tool in our decision-making process.</div>
+</div>
+<div class="testimonial-item bg-light my-4">
+<div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+<img class="img-fluid rounded" src="{% static 'app/assets/img/Michael.jpg' %}" style="width: 60px; height: 60px;">
+<div class="ps-4">
+<h4 class="text-primary mb-1">Michael</h4>
+<small class="text-uppercase">Chief Operating Officer</small>
+</div>
+</div>
+<div class="pt-4 pb-5 px-5">
+    We've been using Analytic Avengers' CLV prediction website for several months now, and the results speak for themselves. Their platform has empowered us to make data-driven decisions with confidence, resulting in a significant improvement in our ROI. The ability to accurately forecast customer lifetime value has allowed us to allocate resources more effectively and focus our efforts on high-value customers. It's a game-changer for any business looking to maximize profitability and drive sustainable growth. </div>
+</div>
+<div class="testimonial-item bg-light my-4">
+<div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+<img class="img-fluid rounded" src="{% static 'app/assets/img/emily.jpg' %}" style="width: 60px; height: 60px;">
+<div class="ps-4">
+<h4 class="text-primary mb-1">Emily</h4>
+<small class="text-uppercase">Head of Analytics</small>
+</div>
+</div>
+<div class="pt-4 pb-5 px-5">
+    Analytic Avengers' CLV prediction website exceeded all our expectations. Their platform provided us with comprehensive analyses and actionable insights that we simply couldn't find elsewhere. By accurately predicting customer behavior and lifetime value, we were able to optimize our marketing efforts, increase customer retention, and drive substantial revenue growth. It's truly a must-have tool for any business looking to stay ahead of the competition.</div>
+</div>
+</div>
+</div>
+</div>
+
+{% endblock %}

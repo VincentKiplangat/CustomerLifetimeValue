@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="color: white;">Prediction Result</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        Swal.fire({
+            title: 'Prediction Result',
+            html: `<p class="prediction-text">The predicted value is: <strong style="color: red;">{{ prediction }}</strong></p>`,
+            icon: 'success',
+            confirmButtonText: 'OK',
+            customClass: {
+                confirmButton: 'btn btn-primary btn-grey' +
+                    '',
+                popup: 'bg-primary',
+
+                background: '#06a3da',
+                // Set the text color to white
+                content: 'text-white',
+                // Set the title text color to white
+                title: 'text-white'
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

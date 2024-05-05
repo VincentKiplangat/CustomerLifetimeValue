@@ -1,0 +1,194 @@
+{% extends 'layouts/master.html' %}
+{% load static %}
+
+{% block title %}
+    Prediction Form
+{% endblock %}
+
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        /* Customize default and scrolled background and text color */
+        body.default {
+            background-color: #05396e; /* Dark background color */
+            color: white; /* White text color */
+        }
+
+        body.scrolled {
+            background-color: #05396e; /* White background color */
+            color: #ffffff; /* Black text color */
+        }
+
+        /* Override Bootstrap's default background color for the container */
+        .container {
+            background-color: transparent; /* Make container background transparent */
+        }
+
+        /* Adjust form-check-group styles */
+        .form-check-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .form-check-column {
+            flex: 1 1 45%; /* Adjust the width of columns as needed */
+        }
+
+        /* Customize button styles */
+        .btn-primary {
+            background-color: #007bff; /* Blue primary button color */
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            border-color: #0056b3;
+        }
+
+        .btn-primary:focus,
+        .btn-primary.focus {
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); /* Focus outline color */
+        }
+
+        /* Additional custom styles can be added here */
+    </style>
+</head>
+
+<body class="default"> <!-- Add default class to body tag -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <form id="userDataForm" method="post" action="{% url 'predict' %}">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="ageInput">Age:</label>
+                        <input type="number" class="form-control" id="ageInput" name="age" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="priceInput">Price:</label>
+                        <input type="number" class="form-control" id="priceInput" name="price" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lifetimeInput">Lifetime (months):</label>
+                        <input type="number" class="form-control" id="lifetimeInput" name="lifetime_months" required>
+                    </div>
+                    <div class="form-check-group">
+                        <div class="form-check form-check-column">
+                            <input type="checkbox" class="form-check-input" id="channelEmailInput"
+                                name="channel_email">
+                            <label class="form-check-label" for="channelEmailInput">Channel Email</label>
+                        </div>
+                        <div class="form-check form-check-column">
+                            <input type="checkbox" class="form-check-input" id="channelPhoneInput"
+                                name="channel_phone">
+                            <label class="form-check-label" for="channelPhoneInput">Channel Phone</label>
+                        </div>
+                        <div class="form-check form-check-column">
+                            <input type="checkbox" class="form-check-input" id="reasonSignupInput"
+                                name="reason_signup">
+                            <label class="form-check-label" for="reasonSignupInput">Reason for Signup</label>
+                        </div>
+                        <div class="form-check form-check-column">
+                            <input type="checkbox" class="form-check-input" id="reasonSupportInput"
+                                name="reason_support">
+                            <label class="form-check-label" for="reasonSupportInput">Reason for Support</label>
+                        </div>
+                        <div class="form-check form-check-column">
+                            <input type="checkbox" class="form-check-input" id="genderFemaleInput"
+                                name="gender_female">
+                            <label class="form-check-label" for="genderFemaleInput">Female</label>
+                        </div>
+                        <div class="form-check form-check-column">
+                            <input type="checkbox" class="form-check-input" id="genderMaleInput"
+                                name="gender_male">
+                            <label class="form-check-label" for="genderMaleInput">Male</label>
+                        </div>
+                        <div class="form-check form-check-column">
+                            <input type="checkbox" class="form-check-input" id="subscriptionAnnualInput"
+                                name="subscription_annual_subscription">
+                            <label class="form-check-label" for="subscriptionAnnualInput">Annual
+                                Subscription</label>
+                        </div>
+                        <div class="form-check form-check-column">
+                            <input type="checkbox" class="form-check-input" id="subscriptionMonthlyInput"
+                                name="subscription_monthly_subscription">
+                            <label class="form-check-label" for="subscriptionMonthlyInput">Monthly
+                                Subscription</label>
+                        </div>
+                        <div class="form-check form-check-column">
+                            <input type="checkbox" class="form-check-input" id="signupMorningInput"
+                                name="signup_period_Morning">
+                            <label class="form-check-label" for="signupMorningInput">Signup Period:
+                                Morning</label>
+                        </div>
+                        <div class="form-check form-check-column">
+                            <input type="checkbox" class="form-check-input" id="signupNightInput"
+                                name="signup_period_Night">
+                            <label class="form-check-label" for="signupNightInput">Signup Period: Night</label>
+                        </div>
+                        <div class="form-check form-check-column">
+                            <input type="checkbox" class="form-check-input" id="signupNoonInput"
+                                name="signup_period_Noon">
+                            <label class="form-check-label" for="signupNoonInput">Signup Period: Noon</label>
+                        </div>
+                        <div class="form-check form-check-column">
+                            <input type="checkbox" class="form-check-input" id="endMorningInput"
+                                name="end_period_Morning">
+                            <label class="form-check-label" for="endMorningInput">End Period: Morning</label>
+                        </div>
+                        <div class="form-check form-check-column">
+                            <input type="checkbox" class="form-check-input" id="endNightInput"
+                                name="end_period_Night">
+                            <label class="form-check-label" for="endNightInput">End Period: Night</label>
+                        </div>
+                        <div class="form-check form-check-column">
+                            <input type="checkbox" class="form-check-input" id="endNoonInput"
+                                name="end_period_Noon">
+                            <label class="form-check-label" for="endNoonInput">End Period: Noon</label>
+                        </div>
+                    </div>
+                  <div class="text-center mt-5 mb-5">
+    <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+</div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript section for scroll behavior -->
+    <script>
+        // Listen for scroll events
+        window.addEventListener('scroll', function() {
+            // Check if the user scrolled beyond the top of the page
+            if (window.scrollY > 0) {
+                // Add the 'scrolled' class to body
+                document.body.classList.add('scrolled');
+            } else {
+                // Remove the 'scrolled' class from body
+                document.body.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+    <!-- JavaScript section for SweetAlert integration -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  {% if response %}
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            Swal.fire({ text: {{ response }}
+
+    </script>
+    {% endif %}
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+{% endblock %}

@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{% block title %}{% endblock %}</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="Free HTML Templates" name="keywords">
+<meta content="Free HTML Templates" name="description">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+<link href="{% static 'app/assets/lib/animate/animate.min.css' %}" rel="stylesheet">
+<link href="{% static 'app/assets/lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+<link href="{% static 'app/assets/lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+<link href="{% static 'app/assets/css/bootstrap.min.css' %}" rel="stylesheet">
+
+<link href="{% static 'app/assets/css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+{% include 'partials/header.html' %}
+
+{% block content %}
+
+{% endblock %}
+
+{% include 'partials/footer.html' %}
+
+<script data-cfasync="false" src="{% static 'app/assets/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script src="https://code.jquery.com/jquery-3.4.1.min.js" type="44f85e851b21bf002e685753-text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" type="44f85e851b21bf002e685753-text/javascript"></script>
+<script src="{% static 'app/assets/lib/wow/wow.min.js' %}" type="44f85e851b21bf002e685753-text/javascript"></script>
+<script src="{% static 'app/assets/lib/easing/easing.min.js' %}" type="44f85e851b21bf002e685753-text/javascript"></script>
+<script src="{% static 'app/assets/lib/waypoints/waypoints.min.js' %}" type="44f85e851b21bf002e685753-text/javascript"></script>
+<script src="{% static 'app/assets/lib/counterup/counterup.min.js' %}" type="44f85e851b21bf002e685753-text/javascript"></script>
+<script src="{% static 'app/assets/lib/owlcarousel/owl.carousel.min.js' %}" type="44f85e851b21bf002e685753-text/javascript"></script>
+<script src="{% static 'app/assets/lib/isotope/isotope.pkgd.min.js' %}l" type="44f85e851b21bf002e685753-text/javascript"></script>
+<script src="{% static 'app/assets/lib/lightbox/js/lightbox.min.js' %}" type="44f85e851b21bf002e685753-text/javascript"></script>
+
+<script src="{% static 'app/assets/js/main.js' %}" type="44f85e851b21bf002e685753-text/javascript"></script>
+<script src="{% static 'app/assets/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js' %}" data-cf-settings="44f85e851b21bf002e685753-|49" defer></script></body>
+</html>
