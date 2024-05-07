@@ -39,3 +39,12 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.email
+
+    # Newsletter
+    # ****************************************************************
+class NewsletterUser(models.Model):
+    email = models.EmailField()
+    date_added = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.email

@@ -24,6 +24,11 @@ from TheAnalyticAvengers import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('mainapp.urls')),
+
+    # Newsletter
+    # url(r'^newsletter', include(newsletters.urls))
+
+
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns = format_suffix_patterns(urlpatterns)
 
